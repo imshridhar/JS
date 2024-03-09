@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> 
+
+// array filter method
+// less that and greater than value should be return and original array does not change
+
+let arr2=[40,90,100,0,4,5]
+let y=arr2.filter((a)=>{
+     return a<10
+})
+console.log(y);
+
+// array reduce method result ke saath operation karega
+let arr3=[1,7,6,4,3,2]
+let newarr3=arr3.reduce((h1,h2)=>{
+   return h1+h2
+})
+console.log(newarr3)
+
+// function greaterone(10,20,30){
+//     return a>=b>=c?a:b:c;
+// }
+// console.log(greaterone(10,20,30));
+
+   </script>
+</body>
+</html>

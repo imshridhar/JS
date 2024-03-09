@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Arrays
+// In JavaScript, an array is a collection of data values of any data type. Arrays are a
+// fundamental data structure and are used to store and manipulate data in many
+// JavaScript programs.
+
+// Defining Array in JS:
+    // square brackets
+
+    // let a=[5,10,true,20,30,40,"Mohan"];
+    // console.log(a.length);
+
+    // for(let i=0;i<a.length;i++){
+    //     console.log(a[i]);
+    // }
+
+    // For of Loop
+    // for(let el of a){
+    //     console.log(el);
+    // }
+
+    // For in Loop
+    // for(let riya in a){
+    //     console.log(typeof a[riya]);
+    //     console.log(typeof riya);
+    //     console.log(a[riya]+riya);
+    // }
+    
+    
+    // Array() constructor
+    // let a=new Array(10,20,30);
+    // console.log(a);
+    // a[1]=10;
+    // a[0]=0;
+    // a[1000]=80;
+    
+    // console.log(a);
+    
+    
+    
+    
+    // Array.from() method
+    // let str="ShiyaRam";
+
+    // let arr=Array.from(str);
+    // console.log(arr);
+
+    
+    // let arr2= Array.from(str);
+    
+
+
+// Accessing Array elements:
+
+// 1. Accessing using square brackets:   
+
+    // 2. Accessing using .at();
+    // console.log(arr[-4]);
+    // console.log(arr.at(-7));
+    // console.log(arr.at(-1));
+    // console.log(typeof arr);
+
+
+// Built-in array methods:
+
+// 1. push(): 
+// console.log(arr);
+// let a=arr.push(1000);
+// console.log(arr);
+// console.log(a);
+
+// 2. pop():
+// console.log(arr.length);
+// let a=arr.pop();
+// console.log(arr.length);
+// console.log(a);
+
+// 3. sort():
+// let a=[10,20,50,30,40,60,1]
+// let sa=a.sort();
+// console.log(sa);
+// console.log(a);
+// console.log(arr.sort());
+
+// 4. indexOf():
+// console.log(arr.indexOf(10n,1));
+
+// 5. slice(): 
+// let arr =[0,2,10n,5,"String",true,4.5,10n,null,undefined,50n,101]; 
+
+// let a=arr.slice(3);
+// console.log(a);
+// console.log(arr);
+
+// 6. splice():
+// let a2=arr.splice(2,2,100,2000,20000)
+// console.log(a2);
+// console.log(arr);
+
+// 7. concat():
+// let arr1=[2,4,6,8];
+// let arr2=[1,3,5,7];
+// let arr3=[11,22,33];
+// let arr4=[111,221,331];
+
+// let a=arr2.concat(arr1,arr3,arr4);
+// console.log(a);
+
+// Objects
+
+// var stu1={
+//     name:"Rajesh",
+//     rollNo:10,
+//     marks:95,
+//     sub:["HTML","CSS","JS","React"],
+//     // add:function (){
+//     //     console.log("Sum");
+//     // }
+// }
+
+// var stu2={
+//     _name2:"Ramesh",
+//     rollNo:155,
+//     "@":90,
+//     sub:{frontend:"HTML",
+//         backend:"Node.js"},
+//     add:function add(){
+//         console.log("Sum");
+//     }
+// }
+// console.log(stu2.sub.frontend);
+
+// Spread and Rest Operator
+
+// Spread Operator
+// let arr1=[1,2,3];
+// let arr2=[3,4,5];
+// let a=[...arr1,...arr2];
+// console.log(a);
+
+
+
+// Rest Operator
+// function add(a,b,...numbers){
+//     let sum=a+b;
+//     // console.log(a);
+//     // console.log(b);
+//     // console.log(numbers)
+;
+//     console.log(sum);
+//     for(let el of numbers){
+//         sum+=el;
+//     }
+//     return sum;
+    
+// }
+// let sum=add(10,20,30,40,200,300);
+// console.log(sum);
+
+
+
+// JavaScript Copying: Shallow vs Deep
+
+// A shallow copy creates a new object or array, but only the top-level
+// values are copied by reference. This means that if any copied values
+// are themselves objects or arrays, they will still be referenced to the
+// original objects or arrays.
+// let a=[10,20,30,40,50];
+// let b=a;
+// console.log(a);
+// console.log(b);
+// b[0]=100;
+// console.log(a);
+// console.log(b);
+
+
+
+
+// On the other hand, a deep copy creates a completely new object or
+// array, where all the nested values are also copied by value. This
+// means that all the properties of the original object or array are
+// duplicated, and no references are retained.
+
+// let a=[10,20,30,40,50];
+
+// let b=[...a];
+// console.log(a);
+// console.log(b);
+
+// b[0]=200;
+// console.log(a);
+// console.log(b);
+
+// console.log(a);
+// const a=10;
+add(10,20);
+function add(a,b){
+    console.log(a+b);
+}
+let a=10;
+const b="Mohan"
+    </script>
+</body>
+</html>

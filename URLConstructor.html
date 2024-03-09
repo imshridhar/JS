@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function URLconstructor(queryParameters,domain, path ){
+    return`https://${domain}${path}?name=${queryParameters.name}?age=${queryParameters.age}` 
+    
+    }
+    const queryParameters = {name:'John',age:'28'}; 
+    const domain = "google.com";
+    const path = '/search';
+    console.log(URLconstructor(queryParameters,domain,path));
+    
+    </script>
+</body>
+</html>

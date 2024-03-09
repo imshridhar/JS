@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+1357
+3571
+5713
+7135
+*/
+
+let n=4;
+for(let i=1;i<=n;i++)
+{
+    let c="";
+    for(let j=i;j<n+i;j++)
+    {
+        let no=2*j-1;
+        if(no>(2*n)-1)
+        {
+            c+=(no%(2*n-1))-1;
+        }
+       else  
+        {
+            c+=no;
+        }
+        
+        
+    }
+    console.log(c);
+}
+    </script>
+</body>
+</html>

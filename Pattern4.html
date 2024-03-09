@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=Number(prompt("Enter a no"))
+if(!isNaN(n))
+{
+    for(let i=n;i>=1;i--)
+    {
+        let c="";
+        for(let j=1;j<=n-i;j++)
+        {
+              c+="  ";
+        }
+        for(let j=1;j<=2*i-1;j++)
+        {
+            c+="* ";
+        }
+        console.log(c);
+    }
+    for(let i=2;i<=n;i++)
+    {
+        let c="";
+        for(let j=1;j<=n-i;j++)
+        {
+              c+="  ";
+        }
+        for(let j=1;j<=2*i-1;j++)
+        {
+            c+="* ";
+        }
+        console.log(c);
+    }
+    
+}
+/*
+
+* * * 
+  * 
+* * * 
+
+*/
+    </script>
+</body>
+</html>

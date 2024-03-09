@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Conditional statements
+// let marks=92;
+// if(marks>90){
+//     console.log("A+");
+// }
+// else if(marks>80){
+//     console.log("B");
+// }else if(marks>70){
+//     console.log("c+")
+// }
+// else{
+//     console.log("You are Fail");
+// }
+// Check a number is odd or Even
+// console.log( typeof Number("10"));
+// const  a=Number(prompt("Enter a number"));
+// let a=Number(prompt("Please enter a Number"));
+// console.log(typeof a);
+
+// let a= Number(prompt("Please enter a number"));
+// console.log(typeof a);
+// console.log(a);
+// a=Number(a);
+
+// if(typeof(a)=='number'){
+
+//     if(a%2==0){
+//         console.log("The No is Even");
+//     }else{
+//         console.log("The no is Odd")
+//     }
+// }else{
+//     console.log("Please enter a valid Number")
+// }
+let email="abcd@gm.ccq";
+let len=email.length;
+let lastDotIndex=email.lastIndexOf('.');
+let lastElementIndex=len-1;
+let lastattheRateIndex=email.lastIndexOf('@');
+
+if(len<11 ||(lastElementIndex-lastDotIndex)>3 ||(lastDotIndex-lastattheRateIndex)<3){
+    console.log("Invalid Email");
+}else{
+    console.log("Valid Email");
+}
+    </script>
+</body>
+</html>

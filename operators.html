@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Variable Declaration: "let", "const", or "var" 
+
+// let can be updated but not re-declared.
+
+// const cannot be updated or re-declared
+
+
+
+/*Naming Convention
+
+    ● Variable names can contain letters, digits, underscores, and dollar signs.
+    ● A variable name must begin with a letter, underscore, or dollar sign.
+    ● Variable names are case-sensitive.
+    ● It is recommended to avoid using reserved keywords as variable names,
+        such as var, let, const, function, return, etc.
+*/
+
+
+// The most commonly used naming convention includes:
+// ● Camel Casing:
+// var firstName="Shridhar";
+
+
+// ● Snake Casing:
+// var first_name="Ram";//snake sasing
+
+
+// Single-line and multi-line comments:
+//
+
+
+
+// / ************* ********
+
+    //    Primitive Datatypes
+
+            // ******************** /
+
+// Number (64bit)  -(2^53 -1) and (2^53-1).
+// let a=10;
+// console.log(typeof(a));
+// console.log(typeof a);
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MIN_VALUE);
+// console.log(Number.MIN_SAFE_INTEGER);
+// console.log(-5/0);
+// String
+// var a='v';
+// let name=prompt("Please enter your ");
+// let rollNo=prompt("Enter your Roll No");
+// console.log(`My name is ${name} \n and roll no is ${rollNo}`);
+// console.log("My name is",name," and my roll no is ",rollNo);
+
+
+
+// Boolean
+// let b=false;
+// console.log( typeof b);
+
+
+// Undefined
+// let a;
+// console.log(typeof a);
+
+
+// Null
+
+// const a=null;
+// console.log(typeof a);
+
+
+// Symbol(ES6/2015)
+
+// BigInt (ES2020)
+// let a=10n;
+// console.log(typeof a);
+
+
+
+
+// / ******************
+    // result = 0.1 + 0.2;     
+    // alert(result===0.3);// false
+    // result=100.1+100.2;
+    // alert(result===200.3);//true
+
+// ******************* /
+
+
+
+// Interesting facts about Data Types (Infinity and max value)
+
+
+// Different types of operators:
+// 1. Arithmetic Operators:
+// addition (+), subtraction (-),multiplication (*)
+// , division (/),increment(++), decrement(--), and modulus (%).
+// let a=100;
+// let b=10;
+// console.log(a%b);
+
+// post Increment /Decrement operator
+// console.log(a--);
+// console.log(a++);
+// console.log(a)
+
+
+
+
+// pre Increment /Decrement operator
+// console.log(--a);
+// console.log(++a);
+// console.log(5+(a++)+a);
+// console.log(a);
+
+
+// 2. Assignment Operators:
+// assignment (=), addition assignment (+=),subtraction assignment (-=),multiplication assignment (*=), division assignment (/=), and modulus assignment (%=).
+
+// let a=100;
+// // a+=5;//a=a+5
+// console.log(a*=10);
+
+
+// 3. Comparison operators:
+
+// include equality (==), strict equality (===), inequality (!=), strict inequality (!==),greater than (>), less than (<), greater than or equal to (>=), and less than or equal to (<=).
+
+// console.log(5!=='5');
+
+
+
+
+
+//     Falsy values
+//     ● In JavaScript, the values false, 0, 0n (BigInt zero), "" (empty string),
+//         null, undefined, and NaN (Not-a-Number) are considered falsy.
+
+
+// 4. Logical Operators:
+
+// logical AND(&&), logical OR (||), and logical NOT (!).false
+
+// console.log(true && false);
+// console.log(1&&'');
+
+// console.log(true || false);
+
+// console.log(''||0);
+// console.log(false&&10||'');
+
+
+
+
+
+
+// And operators returns last truthy value and first falsy value.
+
+
+// // 5. Bitwise Operators:
+
+// bitwise AND (&)
+// , bitwise OR (|), bitwise XOR (^), bitwise NOT (~), left shift (<<), right shift (>>), and zero-fill right shift (>>>).
+
+// console.log(10&2);
+// console.log(10|2);
+// console.log(10^2);
+// console.log(~100);
+// console.log(10<<3);
+// console.log(-10>>>1);
+
+// let a=10;
+// let b=20;
+
+// let temp;
+// temp=a;
+// a=b;
+// b=temp;
+// console.log(a);
+// console.log(b);
+
+// a=a*b;
+// b=a/b;
+// a=a/b;
+// 
+
+// a=a^b;
+// b=a^b;
+// a=a^b;
+// console.log(a);
+// console.log(b);
+
+
+
+
+// String Comparison and Unicode in JavaScript
+// console.log("objectz">="ocjecta")
+// Unicode Values
+
+// String Comparison
+// console.log("abd"<"abdc");
+
+// Precedence and Associativity
+// 1.Precedence: Precedence refers to the order of evaluation of operators, where operators with higher precedence are evaluated first.
+// console.log(10*2/5);
+// console.log(2**1**2);
+    </script>
+</body>
+</html>

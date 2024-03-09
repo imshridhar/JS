@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello 
+
+
+    <script>
+        let a=prompt("ENter your mail");
+let mailLength=a.length;
+let LastIndexOfDot=a.lastIndexOf(".");
+let LastIndexOfAtTheRate=a.lastIndexOf("@");
+let LastElementIndex=mailLength-LastIndexOfDot;
+let NoOfCharecterBetDotAndAtTheRate=LastIndexOfDot-LastIndexOfAtTheRate;
+
+
+if(mailLength>11 && LastElementIndex>=3 && NoOfCharecterBetDotAndAtTheRate>=6)
+{
+    console.log("valid email");
+
+}
+else{
+    console.log("invalid Email");
+}
+8-4
+    </script>
+</body>
+</html>

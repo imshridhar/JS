@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let min=1;
+let max=100;
+let number=parseInt(Math.random()*(max-min+1)+min);
+console.log(number);
+let guess=1;
+let n;
+       do{
+             n=Number(prompt("Enter a number"))
+ 
+              if((n>number))
+            {
+               console.log(`the number is less than ${n}`);
+                guess++;
+            }
+             else if(n<number)
+             {
+              console.log(`the number is greater than ${n}`);
+               guess++;
+       
+             }
+            else{
+                console.log("you enter right number");
+    
+              }
+
+}while(n!=number);
+ 
+
+
+console.log("your score is",100-guess);
+  </script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+                                  // function declaration
+// console.log(add(10,20));
+// function add(a,b){
+//     return a+b;
+// }
+
+
+                              // function expression
+// add(10,200)
+// const add = function add2(a,b){
+//     console.log(a+b);
+// }
+// add(10,200)
+
+// let add1 = function add(a,b){
+//     return a+b;
+// }
+// // let sum= add1(10,2000);
+// // console.log(sum);
+// console.log(add1(10,2000));
+
+                              // Arrow Function
+
+// let add= function sum(a,b){
+//     return a+b;
+// }
+
+// let add = (a,b) =>{
+    // console.log("The product is :");
+    // return a+b;
+// };
+
+// let add = (a,b) => a*b;
+  
+// let add = a =>a+10;
+
+// console.log(add(40));
+
+    
+        
+
+                        // Pass by value and pass by Reference 
+
+// function passBy(x,y,z){
+//     x=30;
+//     y[1]=1000;
+//     z.sub="JS";
+//     console.log(x);
+//     console.logyes;
+//     console.log(z);
+// }
+// let a=10;
+// let arr=[10,20,30];
+// let obj={
+//     name:"Ram",
+//     sub:"Arrowing",
+//     wife:"Sita",
+// }
+//  console.log(a,arr,obj);
+// passBy(a,arr,obj);
+// console.log(a,arr,obj);
+
+                              // IIFE
+(function add(a,b){
+  console.log(a+b);
+})(10,20);
+
+                              // Pure Function
+//  let interestRate =20 ;
+let a=[10,20,30];
+function calInterest(a,t,r){
+a[1]=200;
+console.log(`Total Interest ${a*t*r/100} for  Amount ${a} for  ${t} Year at  ${r} % rate`);
+}
+calInterest(10000,5,10)
+
+                              // Call by back function
+// CallBack Functions 
+// function sum(){
+//     console.log("sum");
+// }
+// function multiply(){
+//     console.log("multiply");
+// }
+// function print(cbfn){
+//     console.log("The sum is ");
+    
+//     console.log("mogambo");
+//     cbfn();
+// }
+// function sum(){
+//     console.log("sum");
+// }
+// print(sum);
+// console.log("**********");
+// print(multiply);
+
+
+
+function greet(wish) {
+  console.log(
+    `${wish()}, Welcome to the JavaScript Course`
+  );
+}
+
+function sayHi() {
+  return 'Hi!';
+}
+
+function sayHello() {
+  return 'Hello';
+}
+
+function goodMorning() {
+  return 'Good Morning!';
+}
+
+greet(sayHi);
+greet(sayHello);
+greet(goodMorning);
+
+
+                            // Map
+
+let arr=[10,20,30,40,50];
+
+// function double(el){
+//     return el*2;
+// }
+
+let modifiedArr=arr.map((el,ind)=>{return el*ind});
+console.log(modifiedArr);
+console.log(arr);
+
+                          // Currying in JS
+
+// function add1(a, b, c) {
+//   return a + b + c;
+// }
+// console.log(add1(2, 3, 4));
+
+// function outerfn(a){
+//   return function middlefn(b){
+//     return function innerfn(c){
+//       return a+b+c;
+//     }
+//   }
+// }
+// let a=outerfn(10)(20)(30)
+// console.log(a);
+
+
+//For Student 
+// function power(a,b){
+//     return a**b;
+// }
+
+// console.log(power(5,3));
+
+// function power(b) {
+//   return function (a) {
+//     return a ** b;
+//   };
+// }
+
+// let square = power(2)(8);
+// console.log(square(8));
+// let cube=power(3);
+// console.log(cube(2));
+
+// const square = power(2);
+
+// console.log(square);
+
+// console.log(square(4));
+// console.log(square(3));
+// console.log(square(11));
+
+// const cube = power(3);
+// console.log(cube(4));
+// console.log(cube(2));
+
+
+                            // Reduce
+
+                          
+                            // Filter
+
+
+
+
+
+
+
+
+
+// For the given code, refactor and create all the functions with ES6 Arrow functions
+// Do not modify the main function
+//Convert the functions present inside main to ES6 standard(i.e. to arrow function) 
+
+// function main() {
+//     let yearData = {};
+//     function createPerYearData(year, total) {
+//       yearData[year] = total;
+//     }
+  
+//     function printReport() {
+//       console.log("Print Report");
+//     }
+  
+//     function calculateTotalTillDate(perYearBalance) {
+//       let total = 0;
+//       for (let i = 0; i < perYearBalance.length; i++) {
+//         total += perYearBalance[i];
+//       }
+//       return total;
+//     }
+  
+//     function adjustTotalOfYear(year, adjustmentFactor) {
+//       yearData[year] *= adjustmentFactor;
+//     }
+//     //Do not modify the code after this
+//     return {
+//       createPerYearData,
+//       printReport,
+//       calculateTotalTillDate,
+//       adjustTotalOfYear
+//     };
+//   }
+
+  </script>
+</body>
+</html>

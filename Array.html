@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a1=[1,2,3,4,5,6,7,8,9]
+ console.log(a1);
+
+ let a2=new Array(10,20,30);
+ console.log(a2);
+
+ let a3="shridhar";
+ let x=Array.from(a3);
+ console.log(x);
+
+for(let i=0;i<a1.length;i++)
+{
+    console.log(a1[i]);
+}
+
+for(let ele of a2)
+{
+    console.log(ele);
+
+}
+
+
+for(let ind in x)
+{
+    console.log(x[ind]);
+}
+
+console.log(a2.at(-1));//access element using .at() method
+                      //do not take negative index at square bracket 
+
+
+
+                      
+    </script>
+</body>
+</html>

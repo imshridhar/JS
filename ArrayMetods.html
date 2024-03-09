@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        let arr=[1,2,3,4,5,6,7,8]
+
+console.log(arr);//[1, 2, 3, 4, 5, 6, 7, 8]
+                 //print array
+
+let a=arr.pop();
+console.log(a,arr);//(7) [1, 2, 3, 4, 5, 6, 7]
+                    //remove last element of an array and return it
+
+let b=arr.push(9);
+console.log(b,arr);//(8) [1, 2, 3, 4, 5, 6, 7, 9]  add new element in array at last and return length of it
+
+let c=arr.join("-")
+console.log(c);//1-2-3-4-5-6-7-9  join array using symbol
+
+let d=arr.shift();
+console.log(d,arr);//(7) [2, 3, 4, 5, 6, 7, 9] remove first element and return length
+
+let e=arr.unshift(111);
+console.log(e,arr);//(8) [111, 2, 3, 4, 5, 6, 7, 9] add new element at first and return length
+
+
+console.log(arr.length);//9
+ let f=delete arr[2]//delet specified index element but do not change in size and it is modify that array
+console.log(arr);//[111, 2, empty, 4, 5, 6, 7, 9]
+console.log(arr.length);//after delet element size also 9
+
+let arr2=[11,22,33]
+let new_arr=arr.concat(arr2);//concat one array to anather array it dose not modify original array create new array
+console.log(new_arr);// [111, 2, empty, 4, 5, 6, 7, 9, 11, 22, 33]
+console.log(arr);//does not modify array  [111, 2, empty, 4, 5, 6, 7, 9]
+
+let arr3=[1284,4354,3231,345,6,566876765,423,5342366,57,67,5,536]
+let g=arr3.sort()//sort array according to alphabet 
+console.log(g);// [1284, 3231, 345, 423, 4354, 5, 5342366, 536, 566876765, 57, 6, 67]
+console.log(arr3);
+
+let h=arr.splice(2,3,1223,12131,12314)// modify that array first argument shows start index second argument shows how many elements want to delet and other shows which element is added
+console.log(arr);//[111, 2, 1223, 12131, 12314, 6, 7, 9]
+
+let arr4=[12,13,3,43,5,466778,6868,98,9]
+let x=arr4.slice(3,6)//it return starting index and end index-1 elements 
+console.log(arr4);// [12, 13, 3, 43, 5, 466778, 6868, 98, 9]
+console.log(x);//[43, 5, 466778]
+ 
+    </script>
+</body>
+</html>

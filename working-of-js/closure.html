@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // function add(a,b){
+//   console.log(a+b);
+//   return function multiply(a,b){
+//     return a*b;
+//   }
+//   
+// }
+// function add(a,b){
+//   return a+b;
+//   console.log(a+b);
+
+// }
+
+// let a=add(10,30);
+// console.log(a(10,20));
+// console.log(a);
+
+
+
+let a = 'Global';
+
+function outerPrint() {
+  let b = 'OuterPrint';
+
+  return function innerPrint() {
+    let c = 'innerPrint';
+    return `${a} -> ${b} -> ${c}`;
+  };
+ 
+}
+const show = outerPrint();
+console.log(show);
+const printInner = show();
+console.log(printInner);
+
+
+
+// function outer(){
+  
+//   let count = 0;
+//   function inner(){
+//     count++;
+//     console.log(count);
+//   }
+//   return inner;
+// }
+// const counter =outer();
+// console.log(counter);
+// counter();
+// counter();
+
+
+  </script>
+</body>
+</html>

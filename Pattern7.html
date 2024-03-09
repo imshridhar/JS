@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=Number(prompt("Enter a no"));
+if(!isNaN(n))
+{ 
+    for(let i=1;i<=n;i++)
+    {
+        let c="";
+        let sum=0;
+        for(let j=1;j<=i;j++)
+        {
+            sum=sum+j;
+            if(j<i)
+            {
+                c+=j;
+                c+="+";
+            }
+            else 
+            {
+                c+=j;
+                c+="=";
+            }
+            
+        
+        }
+        console.log(c+""+sum);
+        
+    }
+
+}
+else
+{
+    console.log("Enter a valid number");
+}
+
+
+/*
+
+1=1
+1+2=3
+1+2+3=6
+1+2+3+4=10
+1+2+3+4+5=15
+
+*/
+    </script>
+</body>
+</html>

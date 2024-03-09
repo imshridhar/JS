@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let n=Number(prompt("Enter any no"));
+ if(!isNaN(n))
+ {
+ for(let i=1;i<=n;i++)
+ {
+    let c="";
+    for(let j=n;j>i;j--)
+    {
+        c+="  ";
+    }
+    for(let j=1;j<=i;j++)
+    {
+        c+="* ";
+    }
+    console.log(c);
+ }
+}
+else
+{
+    console.log("Enter Valid number");
+}
+/*
+      *
+    * *
+  * * *
+  
+  */
+
+    </script>
+</body>
+</html>

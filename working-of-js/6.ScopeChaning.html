@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /** Scope in JS */
+
+// Global
+// Function(Local)
+// Block
+// scope chaining only works in one direction, from inner
+// to outer, and not the other way around. That means variables defined in an inner
+// scope cannot be accessed from an outer scope
+
+
+// function add(){
+//   let a=10;
+//   var b=20;
+//   if(true){
+//     console.log(a,b);
+//   }
+// }
+// console.log(a);
+// console.log(b);
+
+// Lexical environment
+
+var a = 10;
+let b = 20;
+const c = 30;
+
+function print() {
+  var a = 'ten';
+  let b = 'twenty';
+
+  console.log('***** Inside print Function*****');
+  console.log(a, b, c);
+  console.log('***** *****');
+
+  function innerPrint() {
+    var a = 'inner10';
+    console.log('*Inside innerPrint Function*');
+    console.log(a, b, c);
+  }
+  innerPrint();
+}
+
+print();
+console.log(a, b, c);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const goods = {
+    apple: { price: 150, quantity: 2 },
+    banana: { price: 75, quantity: 3 },
+    orange: { price: 125, quantity: 1 }
+    };   
+ 
+    
+   function calculatePrice(goods){
+        
+   return (goods.apple.price*goods.apple.quantity)+(goods.banana.price*goods.banana.quantity)+(goods.orange.price*goods.orange.quantity)
+    
+    }
+    console.log(calculatePrice(goods));
+ 
+    </script>
+</body>
+</html>

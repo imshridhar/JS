@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //spread operator
+// let a=[10,20,30];
+// let b=[40,50,600];
+
+// let c=[...a,...b]
+
+// console.log(c);
+
+
+
+
+
+//rest operator
+
+
+function ew(...aa){
+    let sum=0 
+    for(let a of aa)
+      {
+        sum=sum+a
+      }
+      return sum
+}
+
+console.log(ew(10,22,20,8));
+console.log(ew(111,222,333,4444,5,5,5));
+  </script>
+</body>
+</html>
